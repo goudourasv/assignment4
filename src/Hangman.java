@@ -30,7 +30,7 @@ public class Hangman extends ConsoleProgram {
             String guessedLetter = readLine("Guess a letter:");
             guessedLetter = guessedLetter.toUpperCase();
             println("Your guess is: " + guessedLetter);
-            currentString = replaceCorrectLettersInString();
+            currentString = replaceCorrectLettersInString(guessedLetter);
             if (guessesCounter == 0){
                 println("you are completely hung");
                 println("The word was" + selectedWord);
