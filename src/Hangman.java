@@ -15,7 +15,7 @@ public class Hangman extends ConsoleProgram {
     private String currentString;
     private int guessesCounter;
     private String selectedWord = selectWord();
-    private HangmanLexicon myHangmanLexicon;
+    private Lexicon lexicon;
     private HangmanCanvas canvas;
     private String incorrectGuesses = "";
 
@@ -89,9 +89,9 @@ public class Hangman extends ConsoleProgram {
 
     //select a secret word at random
     private String selectWord() {
-        myHangmanLexicon = new HangmanLexicon();
-        int randomCase = rgen.nextInt(myHangmanLexicon.getWordCount());
-        selectedWord = myHangmanLexicon.getWord(randomCase);
+        lexicon = new FileLexicon();
+        int randomCase = rgen.nextInt(lexicon.getWordCount());
+        selectedWord = lexicon.getWord(randomCase);
         return selectedWord;
     }
 
