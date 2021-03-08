@@ -12,7 +12,7 @@ public class WordCount extends ConsoleProgram {
     private ArrayList<String> lineList;
     private ArrayList<String> wordList;
     private ArrayList<String> charList;
-    
+
     public WordCount() {
         lineList = new ArrayList<>();
         wordList = new ArrayList<>();
