@@ -1,7 +1,7 @@
 /* File:WordCount.java
  *--------------
  *This program  reads a file and reports how many
- * lines, words, and characters appear  in  it.*/
+ * lines, words, and letters appear  in  it.*/
 
 import acm.program.ConsoleProgram;
 import acm.util.*;
