@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 import java.util.ArrayList;
 
 public class UniqueNames extends ConsoleProgram {
-    private ArrayList nameList;
+    private ArrayList<String> nameList;
     private static final String SENTINEL = "";
 
     public UniqueNames() {
